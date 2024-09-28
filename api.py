@@ -2,6 +2,9 @@ from flask import Flask, jsonify, request, make_response
 
 app = Flask(__name__)
 
+app.config['SERVER_NAME'] = '3.227.248.121'  # Specify the port if running locally (omit port if running in production)
+
+
 # add user database hookup here
 users = {
     "admin": "password123",
