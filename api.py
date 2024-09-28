@@ -23,7 +23,7 @@ def token_required(f):
     return wrap
 
 # Root endpoint just returning 200 status
-@app.route('/')
+@app.route('/', subdomain='api')
 def home():
     return make_response('', 200)
 
@@ -38,7 +38,7 @@ def data():
     return jsonify(sample_data)
 
 # Login endpoint to authenticate and return token
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['POST'], subdomain='api')
 def login():
     auth = request.json
     if not auth or not auth.get('username') or not auth.get('password'):
@@ -57,7 +57,7 @@ def login():
     return make_response('Invalid credentials', 401, {'WWW-Authenticate': 'Basic realm="Login required!"'})
 
 # /post-data endpoint that requires authentication hook up to db
-@app.route('/post-data', methods=['POST'])
+@app.route('/post-data', methods=['POST'], subdomain='api')
 @token_required
 def post_data():
     data = request.json
