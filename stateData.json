@@ -1,0 +1,19 @@
+{
+    "counties": [
+        {
+            "name": "LA County",
+            "companies": [
+                {
+                    "name": "TECO",
+                    "curOut": 0,
+                    "totalCustomers": 1
+                },
+                {
+                    "name": "DUKE",
+                    "curOut": 1,
+                    "totalCustomers": 10
+                }
+            ]
+        }
+    ]
+}
