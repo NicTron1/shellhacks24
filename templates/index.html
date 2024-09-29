@@ -19,10 +19,34 @@
             width: 100%;
         }
 
+        #search-container {
+            position: absolute;
+            top: 600px;
+            left: 10px;
+            z-index: 1;
+            /* background: ; */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #search-input {
+            width: 200px;
+            padding: 5px;
+        }
+
+        #search-button {
+            padding: 5px 10px;
+            visibility: hidden;
+        }
     </style>
 </head>
 
 <body>
+    <div id="search-container">
+        <input id="search-input" type="text" placeholder="Enter county name..." />
+        <button id="search-button">Search</button>
+    </div>
     <div id="map"></div>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
     <script>
