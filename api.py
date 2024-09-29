@@ -1,4 +1,6 @@
 from flask import Flask, jsonify, request, make_response
+from testScrape import scrape_power_outage_data  # Import the scrape function
+from FloridaCountiesDictionary import florida_counties
 import json
 
 # Open and load the JSON file
@@ -61,6 +63,18 @@ def login():
 def post_data():
     data = request.json
     return jsonify({'message': 'Data posted successfully', 'data': data})
+
+@app.route('/get-county-code', methods=['POST'])
+def get_county_code():
+    data = request.get_json()
+    county_name = data.get('countyName', '').lower()
+
+    if county_name in florida_counties:
+        county_code = florida_counties[county_name]
+        scrape_power_outage_data(county_code, county_name)  # Call the scraping function (data will be saved to JSON)
+        return jsonify({'countyCode': county_code})  # Just return the county code
+    else:
+        return jsonify({'error': 'County not found'}), 404
 
 if __name__ == '__main__':
     app.run(debug=True)
