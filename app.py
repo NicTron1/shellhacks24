@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, jsonify
+from testScrape import scrape_power_outage_data  # Import the scrape function
+
 
 app = Flask(__name__)
 
@@ -79,12 +81,13 @@ def home():  # Changed function name from index to home
 
 @app.route('/get-county-code', methods=['POST'])
 def get_county_code():
-    data = request.get_json()  # Get the JSON data from the request
-    county_name = data.get('countyName', '').lower()  # Get the county name and convert to lowercase
+    data = request.get_json()
+    county_name = data.get('countyName', '').lower()
 
-    # Check if the county name exists in the dictionary
     if county_name in florida_counties:
-        return jsonify({'countyCode': florida_counties[county_name]})
+        county_code = florida_counties[county_name]
+        scrape_power_outage_data(county_code, county_name)  # Call the scraping function (data will be saved to JSON)
+        return jsonify({'countyCode': county_code})  # Just return the county code
     else:
         return jsonify({'error': 'County not found'}), 404
 

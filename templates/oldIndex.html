@@ -14,17 +14,17 @@
 
         #map {
             position: absolute;
-            top: 0;
+            top: 50px;
             bottom: 0;
             width: 100%;
         }
 
         #search-container {
             position: absolute;
-            top: 600px;
+            top: 10px;
             left: 10px;
             z-index: 1;
-            /* background: ; */
+            background: white;
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -49,7 +49,6 @@
     <div id="map"></div>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
     <script>
-        // Initialize the map
         mapboxgl.accessToken = 'pk.eyJ1Ijoiam1qbW9yZWxsaSIsImEiOiJjbTFuNTcwMTMwdHd0MmtxNTZhOWpjaXRtIn0.Abzp-s4mV1wbE1Wns2iZfA';
 
         const floridaBounds = [
@@ -64,6 +63,50 @@
             zoom: 6,
             maxBounds: floridaBounds
         });
+
+        async function loadOutageData() {
+            const response = await fetch('florida_outages.json');
+            const outageData = await response.json();
+
+            const geojsonData = {
+                "type": "FeatureCollection",
+                "features": outageData.counties.map(county => ({
+                    "type": "Feature",
+                    "properties": {
+                        "name": county.name,
+                        "outages": county.companies.reduce((acc, company) => acc + company.curOut, 0),
+                        "companies": county.companies.map(company => `${company.name}: ${company.curOut} / ${company.totalCustomers} customers`).join('<br>')
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": county.coordinates
+                    }
+                }))
+            };
+
+            map.addSource('power-outages', {
+                'type': 'geojson',
+                'data': geojsonData
+            });
+
+            map.addLayer({
+                'id': 'power-outage-layer',
+                'type': 'circle',
+                'source': 'power-outages',
+                'paint': {
+                    'circle-radius': 5,
+                    'circle-color': '#ff0000'
+                }
+            });
+
+            map.on('click', 'power-outage-layer', (e) => {
+                const properties = e.features[0].properties;
+                new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML(`<strong>${properties.name}</strong><br>Current Outages: ${properties.outages}<br><strong>Companies:</strong><br>${properties.companies}`)
+                    .addTo(map);
+            });
+        }
 
         // Search functionality
         document.getElementById('search-button').addEventListener('click', async () => {
@@ -113,57 +156,7 @@
             }
         }
 
-
-        map.on('load', () => {
-            // Fetch the counties data from a JSON file
-            fetch('counties.json')
-                .then(response => response.json())
-                .then(outageData => {
-                    // Convert to GeoJSON
-                    const geojsonData = {
-                        "type": "FeatureCollection",
-                        "features": outageData.counties.map(county => ({
-                            "type": "Feature",
-                            "properties": {
-                                "name": county.name,
-                                "outages": county.companies.reduce((acc, company) => acc + company.curOut, 0)
-                            },
-                            "geometry": {
-                                // Replace with actual centroid coordinates of the counties
-                                "type": "Point",
-                                "coordinates": county.coordinates // Assuming your JSON has coordinates
-                            }
-                        }))
-                    };
-
-                    // Add the GeoJSON source
-                    map.addSource('power-outages', {
-                        'type': 'geojson',
-                        'data': geojsonData
-                    });
-
-                    // Add a layer to visualize the data
-                    map.addLayer({
-                        'id': 'power-outage-layer',
-                        'type': 'circle',
-                        'source': 'power-outages',
-                        'paint': {
-                            'circle-radius': 8,
-                            'circle-color': '#ff0000'
-                        }
-                    });
-
-                    // Optional: Add popups to display outage info
-                    map.on('click', 'power-outage-layer', (e) => {
-                        const properties = e.features[0].properties;
-                        new mapboxgl.Popup()
-                            .setLngLat(e.lngLat)
-                            .setHTML(`<strong>${properties.name}</strong><br>Current Outages: ${properties.outages}`)
-                            .addTo(map);
-                    });
-                })
-                .catch(error => console.error('Error fetching the JSON file:', error));
-        });
+        map.on('load', loadOutageData);
     </script>
 </body>
 

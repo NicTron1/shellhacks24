@@ -1,0 +1,708 @@
+{
+    "counties": [
+        {
+            "name": "Alachua County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.3018, 29.6516]
+        },
+        {
+            "name": "Baker County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.3002, 30.3017]
+        },
+        {
+            "name": "Bay County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-85.6159, 30.1587]
+        },
+        {
+            "name": "Bradford County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.1349, 29.9522]
+        },
+        {
+            "name": "Brevard County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-80.6081, 28.3922]
+        },
+        {
+            "name": "Broward County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-80.1918, 26.1901]
+        },
+        {
+            "name": "Calhoun County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-85.2087, 30.3265]
+        },
+        {
+            "name": "Charlotte County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.0288, 26.9342]
+        },
+        {
+            "name": "Citrus County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.5239, 28.7004]
+        },
+        {
+            "name": "Clay County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.7495, 29.9980]
+        },
+        {
+            "name": "Collier County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.6954, 26.1950]
+        },
+        {
+            "name": "Columbia County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.6423, 30.5952]
+        },
+        {
+            "name": "DeSoto County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.8332, 27.2247]
+        },
+        {
+            "name": "Dixie County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-83.1334, 29.5764]
+        },
+        {
+            "name": "Duval County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.5393, 30.3322]
+        },
+        {
+            "name": "Escambia County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-87.2602, 30.6916]
+        },
+        {
+            "name": "Flagler County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.2519, 29.4082]
+        },
+        {
+            "name": "Franklin County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-84.8939, 29.7604]
+        },
+        {
+            "name": "Gadsden County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-84.5795, 30.5890]
+        },
+        {
+            "name": "Gilchrist County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.8913, 29.6078]
+        },
+        {
+            "name": "Glades County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.1276, 26.2418]
+        },
+        {
+            "name": "Gulf County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-85.1945, 29.7368]
+        },
+        {
+            "name": "Hamilton County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-83.2073, 30.4213]
+        },
+        {
+            "name": "Hendry County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.4250, 26.2013]
+        },
+        {
+            "name": "Hernando County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.4334, 28.5384]
+        },
+        {
+            "name": "Highlands County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.2654, 27.3444]
+        },
+        {
+            "name": "Hillsborough County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.4572, 27.9949]
+        },
+        {
+            "name": "Holmes County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-85.6220, 30.8590]
+        },
+        {
+            "name": "Indian River County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-80.6130, 27.6353]
+        },
+        {
+            "name": "Jackson County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-85.2260, 30.7753]
+        },
+        {
+            "name": "Jefferson County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-83.9895, 30.3533]
+        },
+        {
+            "name": "Lafayette County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-83.1577, 30.1896]
+        },
+        {
+            "name": "Lake County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.7464, 28.4023]
+        },
+        {
+            "name": "Lee County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.8015, 26.6633]
+        },
+        {
+            "name": "Leon County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-84.2807, 30.4383]
+        },
+        {
+            "name": "Levy County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.6681, 29.1095]
+        },
+        {
+            "name": "Liberty County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-84.8506, 30.3330]
+        },
+        {
+            "name": "Madison County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-83.4058, 30.4460]
+        },
+        {
+            "name": "Manatee County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.5176, 27.4862]
+        },
+        {
+            "name": "Marion County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.1401, 29.1609]
+        },
+        {
+            "name": "Martin County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-80.4105, 27.1949]
+        },
+        {
+            "name": "Miami-Dade County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-80.2442, 25.7617]
+        },
+        {
+            "name": "Monroe County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.5831, 24.7840]
+        },
+        {
+            "name": "Nassau County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.5828, 30.5994]
+        },
+        {
+            "name": "Okaloosa County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-86.6182, 30.5774]
+        },
+        {
+            "name": "Okeechobee County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-80.8283, 27.2416]
+        },
+        {
+            "name": "Orange County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.2020, 28.5641]
+        },
+        {
+            "name": "Osceola County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.1200, 28.0932]
+        },
+        {
+            "name": "Palm Beach County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-80.3940, 26.7050]
+        },
+        {
+            "name": "Pasco County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.4310, 28.3216]
+        },
+        {
+            "name": "Pinellas County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.7405, 27.8765]
+        },
+        {
+            "name": "Polk County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.9560, 27.8684]
+        },
+        {
+            "name": "Putnam County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.7211, 29.6492]
+        },
+        {
+            "name": "Santa Rosa County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-86.9066, 30.7745]
+        },
+        {
+            "name": "Sarasota County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.4544, 27.3364]
+        },
+        {
+            "name": "Seminole County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.1966, 28.7022]
+        },
+        {
+            "name": "Sumter County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.0954, 28.6380]
+        },
+        {
+            "name": "Suwannee County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-83.0826, 30.2903]
+        },
+        {
+            "name": "Taylor County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-83.5585, 30.2178]
+        },
+        {
+            "name": "Union County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-82.3296, 30.0842]
+        },
+        {
+            "name": "Volusia County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-81.3493, 29.0275]
+        },
+        {
+            "name": "Wakulla County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-84.3552, 30.2104]
+        },
+        {
+            "name": "Walton County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-86.2402, 30.6470]
+        },
+        {
+            "name": "Washington County",
+            "companies": [
+                {
+                    "name": "Company Name",
+                    "curOut": 0,
+                    "totalCustomers": 0
+                }
+            ],
+            "coordinates": [-85.6972, 30.5972]
+        }
+    ]
+}

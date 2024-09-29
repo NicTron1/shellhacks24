@@ -1,18 +1,758 @@
 {
     "counties": [
         {
-            "name": "LA County",
-            "id": 0,
+            "name": "Alachua County",
+            "id": 1,
+            "coordinates": [29.6580, -82.3018],
             "companies": [
                 {
-                    "name": "TECO",
+                    "name": "Gainesville Regional Utilities",
                     "curOut": 0,
-                    "totalCustomers": 1
-                },
+                    "totalCustomers": 100
+                }
+            ]
+        },
+        {
+            "name": "Baker County",
+            "id": 2,
+            "coordinates": [30.2954, -82.2947],
+            "companies": [
                 {
-                    "name": "DUKE",
+                    "name": "Clay Electric Cooperative",
+                    "curOut": 5,
+                    "totalCustomers": 200
+                }
+            ]
+        },
+        {
+            "name": "Bay County",
+            "id": 3,
+            "coordinates": [30.1575, -85.6602],
+            "companies": [
+                {
+                    "name": "Gulf Power Company",
+                    "curOut": 10,
+                    "totalCustomers": 1000
+                }
+            ]
+        },
+        {
+            "name": "Bradford County",
+            "id": 4,
+            "coordinates": [29.9448, -82.1134],
+            "companies": [
+                {
+                    "name": "Clay Electric Cooperative",
+                    "curOut": 3,
+                    "totalCustomers": 150
+                }
+            ]
+        },
+        {
+            "name": "Brevard County",
+            "id": 5,
+            "coordinates": [28.3969, -80.6077],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 20,
+                    "totalCustomers": 5000
+                }
+            ]
+        },
+        {
+            "name": "Broward County",
+            "id": 6,
+            "coordinates": [26.1904, -80.3659],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 15,
+                    "totalCustomers": 7000
+                }
+            ]
+        },
+        {
+            "name": "Calhoun County",
+            "id": 7,
+            "coordinates": [30.4337, -85.1446],
+            "companies": [
+                {
+                    "name": "Gulf Power Company",
+                    "curOut": 2,
+                    "totalCustomers": 120
+                }
+            ]
+        },
+        {
+            "name": "Charlotte County",
+            "id": 8,
+            "coordinates": [26.8947, -81.9094],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 8,
+                    "totalCustomers": 4000
+                }
+            ]
+        },
+        {
+            "name": "Citrus County",
+            "id": 9,
+            "coordinates": [28.7038, -82.5100],
+            "companies": [
+                {
+                    "name": "Withlacoochee River Electric Cooperative",
+                    "curOut": 4,
+                    "totalCustomers": 2500
+                }
+            ]
+        },
+        {
+            "name": "Clay County",
+            "id": 10,
+            "coordinates": [29.9983, -81.7502],
+            "companies": [
+                {
+                    "name": "Clay Electric Cooperative",
                     "curOut": 1,
-                    "totalCustomers": 10
+                    "totalCustomers": 3000
+                }
+            ]
+        },
+        {
+            "name": "Collier County",
+            "id": 11,
+            "coordinates": [26.2410, -81.7950],
+            "companies": [
+                {
+                    "name": "Collier Electric Cooperative",
+                    "curOut": 12,
+                    "totalCustomers": 6000
+                }
+            ]
+        },
+        {
+            "name": "Columbia County",
+            "id": 12,
+            "coordinates": [30.5246, -82.6460],
+            "companies": [
+                {
+                    "name": "Clay Electric Cooperative",
+                    "curOut": 1,
+                    "totalCustomers": 1000
+                }
+            ]
+        },
+        {
+            "name": "DeSoto County",
+            "id": 13,
+            "coordinates": [27.0206, -81.8895],
+            "companies": [
+                {
+                    "name": "Peace River Electric Cooperative",
+                    "curOut": 5,
+                    "totalCustomers": 800
+                }
+            ]
+        },
+        {
+            "name": "Dixie County",
+            "id": 14,
+            "coordinates": [29.5833, -83.1408],
+            "companies": [
+                {
+                    "name": "Dixie Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 600
+                }
+            ]
+        },
+        {
+            "name": "Duval County",
+            "id": 15,
+            "coordinates": [30.3322, -81.6557],
+            "companies": [
+                {
+                    "name": "JEA",
+                    "curOut": 0,
+                    "totalCustomers": 10000
+                }
+            ]
+        },
+        {
+            "name": "Escambia County",
+            "id": 16,
+            "coordinates": [30.6074, -87.3596],
+            "companies": [
+                {
+                    "name": "Escambia Electric Cooperative",
+                    "curOut": 7,
+                    "totalCustomers": 5000
+                }
+            ]
+        },
+        {
+            "name": "Flagler County",
+            "id": 17,
+            "coordinates": [29.4333, -81.2519],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 3,
+                    "totalCustomers": 2000
+                }
+            ]
+        },
+        {
+            "name": "Franklin County",
+            "id": 18,
+            "coordinates": [29.8492, -84.8638],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 1,
+                    "totalCustomers": 500
+                }
+            ]
+        },
+        {
+            "name": "Gadsden County",
+            "id": 19,
+            "coordinates": [30.5882, -84.5709],
+            "companies": [
+                {
+                    "name": "Gadsden Electric Cooperative",
+                    "curOut": 4,
+                    "totalCustomers": 700
+                }
+            ]
+        },
+        {
+            "name": "Gilchrist County",
+            "id": 20,
+            "coordinates": [29.6181, -82.8805],
+            "companies": [
+                {
+                    "name": "Tri-County Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 300
+                }
+            ]
+        },
+        {
+            "name": "Glades County",
+            "id": 21,
+            "coordinates": [26.9024, -81.1998],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 1,
+                    "totalCustomers": 200
+                }
+            ]
+        },
+        {
+            "name": "Hamilton County",
+            "id": 22,
+            "coordinates": [30.2630, -83.0838],
+            "companies": [
+                {
+                    "name": "Columbia Energy Services",
+                    "curOut": 0,
+                    "totalCustomers": 150
+                }
+            ]
+        },
+        {
+            "name": "Hancock County",
+            "id": 23,
+            "coordinates": [27.9881, -82.4538],
+            "companies": [
+                {
+                    "name": "Peace River Electric Cooperative",
+                    "curOut": 1,
+                    "totalCustomers": 400
+                }
+            ]
+        },
+        {
+            "name": "Hernando County",
+            "id": 24,
+            "coordinates": [28.5374, -82.4753],
+            "companies": [
+                {
+                    "name": "Withlacoochee River Electric Cooperative",
+                    "curOut": 2,
+                    "totalCustomers": 3500
+                }
+            ]
+        },
+        {
+            "name": "Highlands County",
+            "id": 25,
+            "coordinates": [27.4475, -81.6873],
+            "companies": [
+                {
+                    "name": "Peace River Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 2000
+                }
+            ]
+        },
+        {
+            "name": "Hillsborough County",
+            "id": 26,
+            "coordinates": [27.9989, -82.4270],
+            "companies": [
+                {
+                    "name": "Tampa Electric Company",
+                    "curOut": 12,
+                    "totalCustomers": 9000
+                }
+            ]
+        },
+        {
+            "name": "Holmes County",
+            "id": 27,
+            "coordinates": [30.8190, -85.6892],
+            "companies": [
+                {
+                    "name": "West Florida Electric Cooperative",
+                    "curOut": 1,
+                    "totalCustomers": 500
+                }
+            ]
+        },
+        {
+            "name": "Indian River County",
+            "id": 28,
+            "coordinates": [27.6374, -80.4105],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 0,
+                    "totalCustomers": 4500
+                }
+            ]
+        },
+        {
+            "name": "Jackson County",
+            "id": 29,
+            "coordinates": [30.8379, -85.2230],
+            "companies": [
+                {
+                    "name": "Jackson Electric Cooperative",
+                    "curOut": 3,
+                    "totalCustomers": 700
+                }
+            ]
+        },
+        {
+            "name": "Jefferson County",
+            "id": 30,
+            "coordinates": [30.5000, -83.8853],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 1,
+                    "totalCustomers": 400
+                }
+            ]
+        },
+        {
+            "name": "Lafayette County",
+            "id": 31,
+            "coordinates": [30.0741, -83.1586],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 0,
+                    "totalCustomers": 100
+                }
+            ]
+        },
+        {
+            "name": "Lake County",
+            "id": 32,
+            "coordinates": [28.3694, -81.7603],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 4,
+                    "totalCustomers": 2000
+                }
+            ]
+        },
+        {
+            "name": "Lee County",
+            "id": 33,
+            "coordinates": [26.6630, -81.9535],
+            "companies": [
+                {
+                    "name": "Lee County Electric Cooperative",
+                    "curOut": 8,
+                    "totalCustomers": 3000
+                }
+            ]
+        },
+        {
+            "name": "Leon County",
+            "id": 34,
+            "coordinates": [30.4394, -84.2807],
+            "companies": [
+                {
+                    "name": "Talquin Electric Cooperative",
+                    "curOut": 5,
+                    "totalCustomers": 2500
+                }
+            ]
+        },
+        {
+            "name": "Levy County",
+            "id": 35,
+            "coordinates": [29.1364, -82.9777],
+            "companies": [
+                {
+                    "name": "Withlacoochee River Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 500
+                }
+            ]
+        },
+        {
+            "name": "Liberty County",
+            "id": 36,
+            "coordinates": [30.3706, -84.7938],
+            "companies": [
+                {
+                    "name": "Gulf Coast Electric Cooperative",
+                    "curOut": 1,
+                    "totalCustomers": 200
+                }
+            ]
+        },
+        {
+            "name": "Madison County",
+            "id": 37,
+            "coordinates": [30.4463, -83.4077],
+            "companies": [
+                {
+                    "name": "Talquin Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 300
+                }
+            ]
+        },
+        {
+            "name": "Manatee County",
+            "id": 38,
+            "coordinates": [27.6349, -82.4534],
+            "companies": [
+                {
+                    "name": "Tampa Electric Company",
+                    "curOut": 10,
+                    "totalCustomers": 5000
+                }
+            ]
+        },
+        {
+            "name": "Marion County",
+            "id": 39,
+            "coordinates": [29.2004, -82.0010],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 6,
+                    "totalCustomers": 4000
+                }
+            ]
+        },
+        {
+            "name": "Martin County",
+            "id": 40,
+            "coordinates": [27.0808, -80.4105],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 3,
+                    "totalCustomers": 2000
+                }
+            ]
+        },
+        {
+            "name": "Monroe County",
+            "id": 41,
+            "coordinates": [24.8343, -81.5754],
+            "companies": [
+                {
+                    "name": "Keys Energy Services",
+                    "curOut": 0,
+                    "totalCustomers": 400
+                }
+            ]
+        },
+        {
+            "name": "Nassau County",
+            "id": 42,
+            "coordinates": [30.5882, -81.4372],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 1,
+                    "totalCustomers": 1200
+                }
+            ]
+        },
+        {
+            "name": "Okaloosa County",
+            "id": 43,
+            "coordinates": [30.4772, -86.2510],
+            "companies": [
+                {
+                    "name": "Okaloosa Electric Cooperative",
+                    "curOut": 2,
+                    "totalCustomers": 1500
+                }
+            ]
+        },
+        {
+            "name": "Okeechobee County",
+            "id": 44,
+            "coordinates": [27.2415, -80.7102],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 4,
+                    "totalCustomers": 900
+                }
+            ]
+        },
+        {
+            "name": "Orange County",
+            "id": 45,
+            "coordinates": [28.5383, -81.3792],
+            "companies": [
+                {
+                    "name": "Orlando Utilities Commission",
+                    "curOut": 5,
+                    "totalCustomers": 8000
+                }
+            ]
+        },
+        {
+            "name": "Osceola County",
+            "id": 46,
+            "coordinates": [28.1010, -81.1331],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 6,
+                    "totalCustomers": 4000
+                }
+            ]
+        },
+        {
+            "name": "Palm Beach County",
+            "id": 47,
+            "coordinates": [26.7050, -80.0364],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 7,
+                    "totalCustomers": 12000
+                }
+            ]
+        },
+        {
+            "name": "Pasco County",
+            "id": 48,
+            "coordinates": [28.3232, -82.4313],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 9,
+                    "totalCustomers": 6000
+                }
+            ]
+        },
+        {
+            "name": "Pinellas County",
+            "id": 49,
+            "coordinates": [27.8006, -82.6875],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 11,
+                    "totalCustomers": 5000
+                }
+            ]
+        },
+        {
+            "name": "Polk County",
+            "id": 50,
+            "coordinates": [27.9100, -81.8400],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 4,
+                    "totalCustomers": 9000
+                }
+            ]
+        },
+        {
+            "name": "Putnam County",
+            "id": 51,
+            "coordinates": [29.6500, -81.7825],
+            "companies": [
+                {
+                    "name": "Clay Electric Cooperative",
+                    "curOut": 2,
+                    "totalCustomers": 700
+                }
+            ]
+        },
+        {
+            "name": "Santa Rosa County",
+            "id": 52,
+            "coordinates": [30.6002, -86.9820],
+            "companies": [
+                {
+                    "name": "Santa Rosa Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 3000
+                }
+            ]
+        },
+        {
+            "name": "Sarasota County",
+            "id": 53,
+            "coordinates": [27.1996, -82.3452],
+            "companies": [
+                {
+                    "name": "Tampa Electric Company",
+                    "curOut": 6,
+                    "totalCustomers": 4000
+                }
+            ]
+        },
+        {
+            "name": "Seminole County",
+            "id": 54,
+            "coordinates": [28.7015, -81.2016],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 3,
+                    "totalCustomers": 2000
+                }
+            ]
+        },
+        {
+            "name": "Sumter County",
+            "id": 55,
+            "coordinates": [28.6847, -82.0682],
+            "companies": [
+                {
+                    "name": "Sumter Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 500
+                }
+            ]
+        },
+        {
+            "name": "Suwannee County",
+            "id": 56,
+            "coordinates": [30.5962, -83.0548],
+            "companies": [
+                {
+                    "name": "Duke Energy",
+                    "curOut": 1,
+                    "totalCustomers": 300
+                }
+            ]
+        },
+        {
+            "name": "Taylor County",
+            "id": 57,
+            "coordinates": [30.4132, -83.5864],
+            "companies": [
+                {
+                    "name": "Talquin Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 200
+                }
+            ]
+        },
+        {
+            "name": "Union County",
+            "id": 58,
+            "coordinates": [30.0532, -82.4389],
+            "companies": [
+                {
+                    "name": "Clay Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 150
+                }
+            ]
+        },
+        {
+            "name": "Volusia County",
+            "id": 59,
+            "coordinates": [29.0270, -81.1005],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 10,
+                    "totalCustomers": 7000
+                }
+            ]
+        },
+        {
+            "name": "Wakulla County",
+            "id": 60,
+            "coordinates": [30.1920, -84.4055],
+            "companies": [
+                {
+                    "name": "Talquin Electric Cooperative",
+                    "curOut": 2,
+                    "totalCustomers": 500
+                }
+            ]
+        },
+        {
+            "name": "Walton County",
+            "id": 61,
+            "coordinates": [30.6620, -86.1910],
+            "companies": [
+                {
+                    "name": "Choctawhatchee Electric Cooperative",
+                    "curOut": 1,
+                    "totalCustomers": 1500
+                }
+            ]
+        },
+        {
+            "name": "Washington County",
+            "id": 62,
+            "coordinates": [30.6634, -85.6373],
+            "companies": [
+                {
+                    "name": "West Florida Electric Cooperative",
+                    "curOut": 0,
+                    "totalCustomers": 1000
+                }
+            ]
+        },
+        {
+            "name": "Wright County",
+            "id": 63,
+            "coordinates": [30.4845, -84.7231],
+            "companies": [
+                {
+                    "name": "Florida Power & Light",
+                    "curOut": 0,
+                    "totalCustomers": 500
                 }
             ]
         }
