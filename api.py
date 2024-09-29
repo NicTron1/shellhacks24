@@ -74,7 +74,8 @@ def get_county_code():
         scrape_power_outage_data(county_code, county_name)  # Call the scraping function (data will be saved to JSON)
         return jsonify({'countyCode': county_code})  # Just return the county code
     else:
-        return jsonify({'error': 'County not found'}), 404
+        codeString = 'County not found: ' + county_name
+        return jsonify({'error': codeString}), 404
 
 if __name__ == '__main__':
     app.run(debug=True)
