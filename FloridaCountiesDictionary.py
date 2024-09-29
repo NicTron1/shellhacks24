@@ -1,6 +1,6 @@
 florida_counties = {
     "escambia": 2272,
-    "santa Rosa": 2276,
+    "santa rosa": 2276,
     "okaloosa": 2275,
     "walton": 2277,
     "holmes": 2273,
@@ -30,10 +30,10 @@ florida_counties = {
     "alachua": 290,
     "nassau": 330,
     "monroe": 329,
-    "miami-Dade": 328,
+    "miami-dade": 328,
     "duval": 303,
     "clay": 298,
-    "st. Johns": 2317,
+    "st. johns": 2317,
     "putnam": 338,
     "flagler": 304,
     "marion": 326,
@@ -50,23 +50,31 @@ florida_counties = {
     "pasco": 335,
     "hillsborough": 315,
     "pinellas": 336,
-    "indian River": 316,
+    "indian river": 316,
     "manatee": 325,
     "sarasota": 339,
     "hardee": 311,
-    "deSoto": 2340,
+    "desoto": 2340,
     "highlands": 314,
     "glades": 308,
     "okeechobee": 331,
-    "st.Lucie": 342,
+    "st.lucie": 342,
     "martin": 327,
     "charlotte": 296,
     "lee": 320,
     "hendry": 312,
-    "palm Beach": 334,
+    "palm beach": 334,
     "collier": 299,
     "broward": 295
 }
 
+
+searchString = input("What is the county\n").lower()
+
+if searchString in florida_counties:
+    value = florida_counties[searchString]
+    print(value)
+
+
 # Example: Accessing value for Miami-Dade
-print(florida_counties["Miami-Dade"])
+#print(florida_counties["Miami-Dade"])
