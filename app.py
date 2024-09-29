@@ -1,8 +1,7 @@
-from flask import Flask, render_template, request, jsonify
+
 from testScrape import scrape_power_outage_data  # Import the scrape function
 import json
 
-app = Flask(__name__)
 
 county_coords = {
     "escambia": [-87.2602, 30.6916],
