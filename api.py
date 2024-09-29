@@ -1,4 +1,7 @@
 from flask import Flask, jsonify, request, make_response
+import json
+
+# Open and load the JSON file
 
 app = Flask(__name__)
 
@@ -21,22 +24,20 @@ def token_required(f):
     return wrap
 
 # Root endpoint just returning 200 status
-@app.route('/api')
+@app.route('/')
 def home():
     return make_response('', 200)
 
 # /data endpoint to return some sample data needs actual data
-@app.route('/api/data', methods=['GET'])
+@app.route('/data', methods=['GET'])
 def data():
-    sample_data = {
-        'id': 1,
-        'name': 'Sample Data',
-        'description': 'This is a sample data response.'
-    }
-    return jsonify(sample_data)
+    with open('stateData.json', 'r') as file:
+        data = json.load(file)
+
+    return jsonify(data)
 
 # Login endpoint to authenticate and return token
-@app.route('/api/login', methods=['POST'])
+@app.route('/login', methods=['POST'])
 def login():
     auth = request.json
     if not auth or not auth.get('username') or not auth.get('password'):
@@ -55,7 +56,7 @@ def login():
     return make_response('Invalid credentials', 401, {'WWW-Authenticate': 'Basic realm="Login required!"'})
 
 # /post-data endpoint that requires authentication hook up to db
-@app.route('/api/post-data', methods=['POST'])
+@app.route('/post-data', methods=['POST'])
 @token_required
 def post_data():
     data = request.json
