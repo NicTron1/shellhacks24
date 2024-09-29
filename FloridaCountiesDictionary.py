@@ -69,11 +69,17 @@ florida_counties = {
 }
 
 
+# Input is an example, searchString needs to mirror the input received from the search
+# bar in the frontend. The input will be ".lower()", and then request will be sent to the dictionary,
+# the value of the key will be returned and pushed to the back of the URL for data to be scraped.
+
 searchString = input("What is the county\n").lower()
 
+#Searches for key in the dictionary, adds value to the end of the URL for scraper to run through
 if searchString in florida_counties:
     value = florida_counties[searchString]
     print(value)
+    print("https://poweroutage.us/area/county/"+str(value))
 
 
 # Example: Accessing value for Miami-Dade
