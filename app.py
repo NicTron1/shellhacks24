@@ -146,21 +146,21 @@ florida_counties = {
     "broward": 295
 }
 
-@app.route('/')  # Only one route for the root URL
-def home():  # Changed function name from index to home
-    return render_template('index.html')  # This will serve your HTML page
+# @app.route('/')  # Only one route for the root URL
+# def home():  # Changed function name from index to home
+#     return render_template('index.html')  # This will serve your HTML page
 
-@app.route('/get-county-code', methods=['POST'])
-def get_county_code():
-    data = request.get_json()
-    county_name = data.get('countyName', '').lower()
+# @app.route('/get-county-code', methods=['POST'])
+# def get_county_code():
+#     data = request.get_json()
+#     county_name = data.get('countyName', '').lower()
 
-    if county_name in florida_counties:
-        county_code = florida_counties[county_name]
-        scrape_power_outage_data(county_code, county_name)  # Call the scraping function (data will be saved to JSON)
-        return jsonify({'countyCode': county_code})  # Just return the county code
-    else:
-        return jsonify({'error': 'County not found'}), 404
+#     if county_name in florida_counties:
+#         county_code = florida_counties[county_name]
+#         scrape_power_outage_data(county_code, county_name)  # Call the scraping function (data will be saved to JSON)
+#         return jsonify({'countyCode': county_code})  # Just return the county code
+#     else:
+#         return jsonify({'error': 'County not found'}), 404
 
 if __name__ == '__main__':
     data = {
