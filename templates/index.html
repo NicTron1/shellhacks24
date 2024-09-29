@@ -78,17 +78,16 @@
                         body: JSON.stringify({ countyName: countyName }),
                     });
 
-                    if (!response.ok) {
-                        throw new Error(`API Error: ${response.statusText}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        alert(`County Code: ${data.countyCode}`);
+                        // Use data.countyCode as needed
+                    } else {
+                        alert('County not found');
                     }
-
-                    const data = await response.json();
-                    alert(`County Code: ${data.countyCode}`);
                 } catch (error) {
                     console.error('Error:', error);
-                    alert('The server is currently unavailable. Please try again later.');
                 }
-
             }
         });
 
