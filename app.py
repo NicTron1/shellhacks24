@@ -1,5 +1,8 @@
+from flask import Flask, render_template, request, jsonify
 
+app = Flask(__name__)
 
+# Your county dictionary
 florida_counties = {
     "escambia": 2272,
     "santa rosa": 2276,
@@ -70,13 +73,20 @@ florida_counties = {
     "broward": 295
 }
 
+@app.route('/')  # Only one route for the root URL
+def home():  # Changed function name from index to home
+    return render_template('index.html')  # This will serve your HTML page
 
-searchString = input("What is the county\n").lower()
+@app.route('/get-county-code', methods=['POST'])
+def get_county_code():
+    data = request.get_json()  # Get the JSON data from the request
+    county_name = data.get('countyName', '').lower()  # Get the county name and convert to lowercase
 
-if searchString in florida_counties:
-    value = florida_counties[searchString]
-    print(value)
+    # Check if the county name exists in the dictionary
+    if county_name in florida_counties:
+        return jsonify({'countyCode': florida_counties[county_name]})
+    else:
+        return jsonify({'error': 'County not found'}), 404
 
-
-# Example: Accessing value for Miami-Dade
-#print(florida_counties["Miami-Dade"])
+if __name__ == '__main__':
+    app.run(debug=True)

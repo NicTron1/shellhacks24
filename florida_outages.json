@@ -1,0 +1,33 @@
+{
+    "counties": [
+        {
+            "name": "Orange County",
+            "id": 0,
+            "companies": [
+                {
+                    "name": "TECO",
+                    "curOut": 50,
+                    "totalCustomers": 1000
+                },
+                {
+                    "name": "DUKE",
+                    "curOut": 30,
+                    "totalCustomers": 500
+                }
+            ],
+            "coordinates": [-81.3792, 28.5383] 
+        },
+        {
+            "name": "Miami-Dade County",
+            "id": 1,
+            "companies": [
+                {
+                    "name": "FP&L",
+                    "curOut": 200,
+                    "totalCustomers": 5000
+                }
+            ],
+            "coordinates": [-80.1918, 25.7617] 
+        }
+    ]
+}

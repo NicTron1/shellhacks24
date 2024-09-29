@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Power Outage Map</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #search-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #search-input {
+            width: 200px;
+            padding: 5px;
+        }
+
+        #search-button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="search-container">
+        <input id="search-input" type="text" placeholder="Enter county name..." />
+        <button id="search-button">Search</button>
+
+    </div>
+    <div id="map"></div>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoiam1qbW9yZWxsaSIsImEiOiJjbTFuNTcwMTMwdHd0MmtxNTZhOWpjaXRtIn0.Abzp-s4mV1wbE1Wns2iZfA';
+
+        const floridaBounds = [
+            [-87.6349, 24.3963],
+            [-79.9743, 31.0007]
+        ];
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-82.5, 27.5],
+            zoom: 6,
+            maxBounds: floridaBounds
+        });
+
+        async function loadOutageData() {
+            const response = await fetch('florida_outages.json');
+            const outageData = await response.json();
+
+            const geojsonData = {
+                "type": "FeatureCollection",
+                "features": outageData.counties.map(county => ({
+                    "type": "Feature",
+                    "properties": {
+                        "name": county.name,
+                        "outages": county.companies.reduce((acc, company) => acc + company.curOut, 0)
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": county.coordinates
+                    }
+                }))
+            };
+
+            map.addSource('power-outages', {
+                'type': 'geojson',
+                'data': geojsonData
+            });
+
+            map.addLayer({
+                'id': 'power-outage-layer',
+                'type': 'circle',
+                'source': 'power-outages',
+                'paint': {
+                    'circle-radius': 5,
+                    'circle-color': '#ff0000'
+                }
+            });
+
+            map.on('click', 'power-outage-layer', (e) => {
+                const properties = e.features[0].properties;
+                new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML(`<strong>${properties.name}</strong><br>Current Outages: ${properties.outages}`)
+                    .addTo(map);
+            });
+        }
+
+        // Search functionality
+        document.getElementById('search-button').addEventListener('click', async () => {
+            const countyName = document.getElementById('search-input').value;
+            if (countyName) {
+                try {
+                    const response = await fetch('http://127.0.0.1:5000/get-county-code', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ countyName: countyName }),
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        alert(`County Code: ${data.countyCode}`);
+                        // Use data.countyCode as needed
+                    } else {
+                        alert('County not found');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            }
+        });
+
+
+        // After fetching the county code
+        const countyCode = data.countyCode;
+        const requestUrl = `https://someapi.com/data?countyCode=${countyCode}`; // Construct the URL with the county code
+
+
+
+
+        // document.getElementById('search-button').addEventListener('click', () => {
+        //     const countyName = document.getElementById('search-input').value;
+        //     if (countyName) {
+        //         // Logic to filter the map based on the county name can be implemented here
+        //         filterOutageData(countyName);
+        //     }
+        // });
+
+        async function filterOutageData(countyName) {
+            const response = await fetch('florida_outages.json');
+            const outageData = await response.json();
+            const filteredCounty = outageData.counties.find(county => county.name.toLowerCase() === countyName.toLowerCase());
+
+            if (filteredCounty) {
+                // Center the map on the county
+                map.flyTo({
+                    center: filteredCounty.coordinates,
+                    zoom: 8
+                });
+
+                // Optionally, display the outage information as a popup
+                new mapboxgl.Popup()
+                    .setLngLat(filteredCounty.coordinates)
+                    .setHTML(`<strong>${filteredCounty.name}</strong><br>Current Outages: ${filteredCounty.companies.reduce((acc, company) => acc + company.curOut, 0)}`)
+                    .addTo(map);
+            } else {
+                alert('County not found. Please try another name.');
+            }
+        }
+
+        map.on('load', loadOutageData);
+    </script>
+</body>
+
+</html>
