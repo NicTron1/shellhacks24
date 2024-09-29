@@ -169,5 +169,5 @@ if __name__ == '__main__':
     for county in florida_counties:
         newData = scrape_power_outage_data(florida_counties[county], county, county_coords[county])
         data["counties"].append(newData)
-    with open('./templates/counties.json', 'w') as file:
+    with open('/home/bitnami/htdocs/shellhacks24/templates/counties.json', 'w') as file:
         json.dump(data, file)
