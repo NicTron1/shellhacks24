@@ -70,7 +70,7 @@
             const countyName = document.getElementById('search-input').value;
             if (countyName) {
                 try {
-                    const response = await fetch('http://127.0.0.1:5000/get-county-code', {
+                    const response = await fetch('http://3.227.238.121/api/get-county-code', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
