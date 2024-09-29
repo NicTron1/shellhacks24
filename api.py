@@ -1,6 +1,10 @@
 from flask import Flask, jsonify, request, make_response
+import json
+
+# Open and load the JSON file
 
 app = Flask(__name__)
+
 
 # add user database hookup here
 users = {
@@ -27,12 +31,10 @@ def home():
 # /data endpoint to return some sample data needs actual data
 @app.route('/data', methods=['GET'])
 def data():
-    sample_data = {
-        'id': 1,
-        'name': 'Sample Data',
-        'description': 'This is a sample data response.'
-    }
-    return jsonify(sample_data)
+    with open('stateData.json', 'r') as file:
+        data = json.load(file)
+
+    return jsonify(data)
 
 # Login endpoint to authenticate and return token
 @app.route('/login', methods=['POST'])

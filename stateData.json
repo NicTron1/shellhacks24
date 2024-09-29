@@ -2,6 +2,7 @@
     "counties": [
         {
             "name": "LA County",
+            "id": 0,
             "companies": [
                 {
                     "name": "TECO",
